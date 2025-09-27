@@ -44,6 +44,16 @@
             bindings = <&kp F5>;
             key-positions = <3 4>;
         };
+
+        Left_Click {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        Right_Click {
+            bindings = <&mkp MB2>;
+            key-positions = <20 19>;
+        };
     };
 
     macros {
