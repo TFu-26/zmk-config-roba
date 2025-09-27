@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
@@ -30,29 +29,19 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        Fn2 {
+            bindings = <&kp F2>;
+            key-positions = <1 2>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        Fn5 {
+            bindings = <&kp F5>;
+            key-positions = <3 4>;
         };
     };
 
@@ -62,6 +51,13 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        pass1: pass1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp R &kp N5 &kp N3 &kp LS(D) &kp EXCL &kp G &kp J &kp O &kp N6 &kp N5 &kp N3 &kp F &kp G>;
+            label = "PASS1";
         };
     };
 
@@ -81,10 +77,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R                               &kp T                                                 &kp Y        &kp U  &kp I  &kp O      &kp P
-&kp A           &kp S         &kp D         &kp F                               &kp G      &kp LS(LG(S))               &kp LS(MINUS)  &kp H        &kp J  &kp K  &kp L      &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                               &kp V      &kp B                       &kp LEFT_ALT   &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG_ZENKAKUHANKAKU  &lt 2 TAB  &lt_to_layer_0 4 SPACE      &kp BACKSPACE  &lt 3 ENTER                           &out OUT_BLE
+&kp Q           &kp W         &kp E         &kp R                               &kp T                                                           &kp Y        &kp U  &kp I  &kp O      &kp P
+&kp A           &kp S         &kp D         &kp F                               &kp G      &kp LS(LG(S))               &kp LS(UP_ARROW)         &kp H        &kp J  &kp K  &kp L      &kp MINUS
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                               &kp V      &kp B                       &mt LEFT_ALT DOWN_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG_ZENKAKUHANKAKU  &lt 2 TAB  &lt_to_layer_0 4 SPACE      &kp BACKSPACE            &lt 3 ENTER                           &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOL_UP C_VOL_DN>;
