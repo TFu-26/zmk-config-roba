@@ -146,10 +146,10 @@
 
         layer_2 {
             bindings = <
-&kp ESC           &kp CARET             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH                                             &none     &none           &none           &none            &mkp MB4
-&kp TILDE         &kp EXCLAMATION       &kp CARET         &kp ASTRK          &kp LEFT_PARENTHESIS  &kp SEMICOLON         &kp LS(HOME)  &kp HOME  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
-&kp LEFT_SHIFT    &kp AMPS              &kp AT            &kp RIGHT_BRACE    &kp PIPE              &kp SINGLE_QUOTE      &kp LS(END)   &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp LEFT_CONTROL  &kp NON_US_BACKSLASH  &kp HASH          &kp LEFT_BRACE     &to 0                 &to 4                 &mkp MB4      &mkp MB5                                                   &kp UNDERSCORE
+&kp ESC           &kp CARET        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH                                             &none     &none           &none           &none            &mkp MB4
+&kp TILDE         &kp EXCLAMATION  &kp CARET         &kp ASTRK          &kp LEFT_PARENTHESIS  &kp SEMICOLON         &kp LS(HOME)  &kp HOME  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
+&kp LEFT_SHIFT    &kp AMPS         &kp AT            &kp RIGHT_BRACE    &kp PIPE              &kp SINGLE_QUOTE      &kp LS(END)   &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LEFT_CONTROL  &kp BACKSLASH    &kp HASH          &kp LEFT_BRACE     &to 0                 &to 4                 &mkp MB4      &mkp MB5                                                   &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -157,10 +157,10 @@
 
         ARROW {
             bindings = <
-&none             &none         &none  &none           &none                                            &none      &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &mkp MB4
-&none             &none         &none  &none           &none             &none               &none      &kp HOME   &mkp MB1        &kp RIGHT_ARROW  &mkp MB2         &mkp MB5
-&kp LEFT_SHIFT    &none         &none  &none           &none             &none               &none      &kp END    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LA(F4)
-&kp LEFT_CONTROL  &kp LEFT_GUI  &tp1   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_SHIFT      &kp LG(L)  &kp ENTER                                                    &kp UNDERSCORE
+&none             &none         &none  &none           &none                                            &none      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &mkp MB4
+&none             &none         &none  &none           &none             &none               &none      &kp HOME   &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
+&kp LEFT_SHIFT    &none         &none  &none           &none             &none               &none      &kp END    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(F4)
+&kp LEFT_CONTROL  &kp LEFT_GUI  &tp1   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_SHIFT      &kp LG(L)  &kp ENTER                                                   &kp UNDERSCORE
             >;
 
             sensor-bindings = <&scroll_up_down>;
