@@ -96,6 +96,11 @@
             bindings = <&kp END>;
             key-positions = <32 33>;
         };
+
+        comboINS {
+            bindings = <&kp INS>;
+            key-positions = <7 8>;
+        };
     };
 
     macros {
@@ -109,7 +114,7 @@
         tkp1: tkp1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp R &kp N5 &kp N3 &kp LS(D) &kp EXCL &kp G &kp J &kp O>;
+            bindings = <&kp LS(T) &kp R &kp N5 &kp N3 &kp LS(D) &kp EXCL &kp G &kp J &kp O>;
             label = "TKP1";
         };
     };
@@ -173,10 +178,10 @@
 
         ARROW {
             bindings = <
-&none             &none         &none  &none           &none                                              &none      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &mkp MB4
-&none             &none         &none  &none           &none             &kp INT_HENKAN        &none      &kp HOME   &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
-&kp LEFT_SHIFT    &none         &none  &none           &none             &kp INT_MUHENKAN      &none      &kp END    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(F4)
-&kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_SHIFT        &kp LG(L)  &kp ENTER                                                   &kp JP_UNDERSCORE
+&none             &none         &none  &none           &none                                              &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &mkp MB4
+&none             &none         &none  &none           &none             &kp INT_HENKAN        &none      &kp HOME      &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
+&kp LEFT_SHIFT    &none         &none  &none           &none             &kp INT_MUHENKAN      &none      &kp END       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(F4)
+&kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_SHIFT        &kp LG(L)  &kp ENTER                                                      &kp JP_UNDERSCORE
             >;
 
             sensor-bindings = <&scroll_up_down>;
