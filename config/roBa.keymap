@@ -80,6 +80,21 @@
             bindings = <&mkp MB2>;
             key-positions = <20 19>;
         };
+
+        comboDELL {
+            bindings = <&kp DEL>;
+            key-positions = <8 9>;
+        };
+
+        comboHOME {
+            bindings = <&kp HOME>;
+            key-positions = <20 21>;
+        };
+
+        comboEND {
+            bindings = <&kp END>;
+            key-positions = <32 33>;
+        };
     };
 
     macros {
