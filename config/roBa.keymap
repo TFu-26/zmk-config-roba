@@ -199,7 +199,7 @@
 &kp Q           &kp W         &kp E         &kp R                 &kp T                                                      &kp Y        &kp U  &kp I  &kp O      &kp P
 &kp A           &kp S         &kp D         &kp F                 &kp G      &lt 2 RIGHT_ARROW      &lt 2 LANG1              &kp H        &kp J  &kp K  &kp L      &kp MINUS
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW         &mt LEFT_ALT LANGUAGE_2  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt 8 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 8 SLASH
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt 6 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 6 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -210,7 +210,7 @@
 &kp Q           &kp W         &kp E         &kp R                 &kp T                                                      &kp Y        &kp U  &kp I  &kp O      &kp P
 &kp A           &kp S         &kp D         &kp F                 &kp G      &lt 2 RIGHT_ARROW      &lt 2 LANG1              &kp H        &kp J  &kp K  &kp L      &kp MINUS
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW         &mt LEFT_ALT LANGUAGE_2  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GLOBE  &lt 4 TAB  &lt 8 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 8 SLASH
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GLOBE  &lt 4 TAB  &lt 7 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 7 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -264,17 +264,17 @@
             bindings = <
 &kp ESC           &kp PERCENT   &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
 &kp JP_TILDE      &kp JP_COLON  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &kp K_CALC      &kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
-&kp LEFT_SHIFT    &kp DOLLAR    &trans                  &kp LG(DOWN_ARROW)  &trans                   &trans          &kp LANGUAGE_2  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
+&kp LEFT_SHIFT    &kp DOLLAR    &none                   &kp LG(DOWN_ARROW)  &none                    &none           &kp LANGUAGE_2  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
 &kp LEFT_CONTROL  &kp JP_YEN    &kp COMMA               &trans              &trans                   &trans          &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp COMMA
             >;
         };
 
         iOS_Num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans    &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp PLUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans    &kp ASTRK
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
+&kp  &kp  &kp  &kp  &kp                &kp  &kp  &kp  &kp       &kp EQUAL
+&kp  &kp  &kp  &kp  &kp  &kp      &kp  &kp  &kp  &kp  &kp PLUS  &kp
+&kp  &kp  &kp  &kp  &kp  &kp      &kp  &kp  &kp  &kp  &kp       &kp ASTRK
+&kp  &kp  &kp  &kp  &kp  &kp      &kp  &kp                      &kp
             >;
         };
 
@@ -292,13 +292,13 @@
         compatible = "zmk,conditional-layers";
 
         iOS_NumLayer {
-            if-layers = <1 8>;
-            then-layer = <7>;
+            if-layers = <1 7>;
+            then-layer = <8>;
         };
 
         win_NumLayer {
-            if-layers = <0 8>;
-            then-layer = <6>;
+            if-layers = <0 6>;
+            then-layer = <8>;
         };
     };
 };
