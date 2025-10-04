@@ -37,6 +37,7 @@
 
 &trackball {
     // automouse-layer = <1>;
+
     scroll-layers = <4>;
 
     // arrows {
@@ -121,6 +122,38 @@
             bindings = <&kp LS(T) &kp R &kp N5 &kp N3 &kp LS(D) &kp EXCL &kp G &kp J &kp O>;
             label = "TKP1";
         };
+
+        window_close: window_close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_ALT>, <&macro_tap>, <&kp F4>;
+
+            label = "WINDOW_CLOSE";
+        };
+
+        bt_select_0: bt_select_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog_off 1>, <&macro_wait_time 200>, <&bt BT_SEL 0>;
+
+            label = "BT_SELECT_0";
+        };
+
+        bt_select_1: bt_select_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog_off 1>, <&macro_wait_time 200>, <&bt BT_SEL 1>;
+
+            label = "BT_SELECT_1";
+        };
+
+        bt_select_2: bt_select_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 500>, <&tog_on 1>;
+
+            label = "BT_SELECT_2";
+        };
     };
 
     behaviors {
@@ -163,25 +196,27 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R                 &kp T                                                           &kp Y        &kp U  &kp I  &kp O      &kp P
-&kp A           &kp S         &kp D         &kp F                 &kp G      &lt 1 RIGHT_ARROW           &lt 1 LANG1              &kp H        &kp J  &kp K  &kp L      &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW              &mt LEFT_ALT LANGUAGE_2  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 2 TAB  &lt_to_layer_0 4 SPACE      &kp BACKSPACE            &lt 3 ENTER                           &lt 4 SLASH
+&kp Q           &kp W         &kp E         &kp R                 &kp T                                                      &kp Y        &kp U  &kp I  &kp O      &kp P
+&kp A           &kp S         &kp D         &kp F                 &kp G      &lt 2 RIGHT_ARROW      &lt 2 LANG1              &kp H        &kp J  &kp K  &kp L      &kp MINUS
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW         &mt LEFT_ALT LANGUAGE_2  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt 6 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 6 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_5 {
+        iOS_default_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp Q           &kp W         &kp E         &kp R                 &kp T                                                      &kp Y        &kp U  &kp I  &kp O      &kp P
+&kp A           &kp S         &kp D         &kp F                 &kp G      &lt 2 RIGHT_ARROW      &lt 2 LANG1              &kp H        &kp J  &kp K  &kp L      &kp MINUS
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW         &mt LEFT_ALT LANGUAGE_2  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GLOBE  &lt 4 TAB  &lt 6 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 6 SLASH
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
-        FUNCTION {
+        win_FUNCTION {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                          &kp F6         &kp F7  &kp F8  &kp F9   &kp F10
 &none   &none   &none   &none   &none   &none         &none     &kp RIGHT_ALT  &kp F4  &none   &kp F11  &kp F12
@@ -192,31 +227,33 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_2 {
+        win_SYMBOL {
             bindings = <
 &kp ESC           &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                   &kp JP_PIPE  &none           &none           &none            &mkp MB4
 &kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp SEMICOLON      &kp LS(HOME)  &kp HOME     &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
 &kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON       &kp LS(END)   &kp END      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &to 4              &mkp MB4      &mkp MB5                                                      &kp UNDERSCORE
+&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &to 7              &mkp MB4      &mkp MB5                                                      &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
-        layer_6 {
+        iOS_SYMBOL {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&kp ESC           &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                &kp PIPE  &none           &none           &none            &mkp MB4
+&kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON      &kp LS(HOME)  &kp HOME  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
+&kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON          &kp LS(END)   &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &to 7              &mkp MB4      &mkp MB5                                                   &kp UNDERSCORE
             >;
+
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         ARROW {
             bindings = <
-&none             &none         &none  &none           &none                                                 &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &mkp MB4
+&none             &none         &none  &none           &none                                                 &bt_select_0  &bt_select_1    &bt_select_2    &none            &mkp MB4
 &none             &none         &none  &none           &none             &kp INT_HENKAN        &kp LS(HOME)  &kp HOME      &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
-&kp LEFT_SHIFT    &none         &none  &none           &none             &kp INT_MUHENKAN      &kp LS(END)   &kp END       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RA(F4)
+&kp LEFT_SHIFT    &none         &none  &none           &none             &kp INT_MUHENKAN      &kp LS(END)   &kp END       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &window_close
 &kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_SHIFT        &kp LG(L)     &kp ENTER                                                      &kp JP_UNDERSCORE
             >;
 
@@ -232,5 +269,13 @@
             >;
         };
 
+        LAYER_7 {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
     };
 };
