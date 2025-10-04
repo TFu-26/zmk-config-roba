@@ -207,7 +207,7 @@
 &kp Q           &kp W         &kp E         &kp R                 &kp T                                                      &kp Y        &kp U  &kp I  &kp O      &kp P
 &kp A           &kp S         &kp D         &kp F                 &kp G      &lt 2 RIGHT_ARROW      &lt 2 LANG1              &kp H        &kp J  &kp K  &kp L      &kp MINUS
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW         &mt LEFT_ALT LANGUAGE_2  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt 6 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 6 SLASH
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt 8 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 8 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -218,7 +218,7 @@
 &kp Q           &kp W         &kp E         &kp R                 &kp T                                                      &kp Y        &kp U  &kp I  &kp O      &kp P
 &kp A           &kp S         &kp D         &kp F                 &kp G      &lt 2 RIGHT_ARROW      &lt 2 LANG1              &kp H        &kp J  &kp K  &kp L      &kp MINUS
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW         &mt LEFT_ALT LANGUAGE_2  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GLOBE  &lt 4 TAB  &lt 7 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 7 SLASH
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GLOBE  &lt 4 TAB  &lt 8 SPACE            &kp BACKSPACE            &lt 5 ENTER                           &lt 8 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
