@@ -226,10 +226,10 @@
 
         win_FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                          &kp F6         &kp F7  &kp F8  &kp F9   &kp F10
-&none   &none   &none   &none   &none   &none         &none     &kp RIGHT_ALT  &kp F4  &none   &kp F11  &kp F12
-&none   &none   &none   &none   &none   &ind_bat      &ind_bat  &none          &none   &none   &none    &none
-&none   &none   &none   &trans  &trans  &trans        &trans    &trans                                  &none
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                           &kp F1  &kp F2  &kp F3  &kp F4   &kp F5
+&kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &none         &none     &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
+&none   &none   &none   &kp F11  &kp F12  &ind_bat      &ind_bat  &none   &none   &none   &kp F11  &kp F12
+&none   &none   &none   &none    &none    &none         &none     &none                            &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -240,7 +240,7 @@
 &kp ESC           &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                   &kp JP_PIPE  &none           &none           &none            &mkp MB4
 &kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp SEMICOLON      &kp LS(HOME)  &kp HOME     &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
 &kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON       &kp LS(END)   &kp END      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &to 7              &mkp MB4      &mkp MB5                                                      &kp UNDERSCORE
+&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &mo 7              &mkp MB4      &mkp MB5                                                      &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -251,7 +251,7 @@
 &kp ESC           &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                &kp PIPE  &none           &none           &none            &mkp MB4
 &kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON      &kp LS(HOME)  &kp HOME  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
 &kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON          &kp LS(END)   &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &to 7              &mkp MB4      &mkp MB5                                                   &kp UNDERSCORE
+&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &mo 7              &mkp MB4      &mkp MB5                                                   &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -300,13 +300,13 @@
         compatible = "zmk,conditional-layers";
 
         iOS_NumLayer {
-            if-layers = <1 7>;
-            then-layer = <8>;
+            if-layers = <1 8>;
+            then-layer = <7>;
         };
 
         win_NumLayer {
-            if-layers = <0 6>;
-            then-layer = <8>;
+            if-layers = <0 8>;
+            then-layer = <6>;
         };
     };
 };
