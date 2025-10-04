@@ -38,6 +38,7 @@
 
 &trackball {
     // automouse-layer = <1>;
+
     scroll-layers = <8>;
 
     // arrows {
@@ -179,6 +180,7 @@
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
 
@@ -298,13 +300,8 @@
         compatible = "zmk,conditional-layers";
 
         iOS_NumLayer {
-            if-layers = <1 8>;
+            if-layers = <1 6>;
             then-layer = <7>;
-        };
-
-        win_NumLayer {
-            if-layers = <0 8>;
-            then-layer = <6>;
         };
     };
 };
