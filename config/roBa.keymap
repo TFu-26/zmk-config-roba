@@ -168,12 +168,12 @@
             #binding-cells = <0>;
             bindings =
                 <&tog_on 6>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 100>,
                 <&tog_on 8>,
                 <&macro_pause_for_release>,
-                <&tog_off 8>,
-                <&macro_wait_time 200>,
-                <&tog_off 6>;
+                <&tog_off 6>,
+                <&macro_wait_time 100>,
+                <&tog_off 8>;
 
             label = "SCROLLLAYER_WIN";
         };
@@ -183,14 +183,70 @@
             #binding-cells = <0>;
             bindings =
                 <&tog_on 7>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 100>,
                 <&tog_on 8>,
                 <&macro_pause_for_release>,
-                <&tog_off 8>,
-                <&macro_wait_time 200>,
-                <&tog_off 7>;
+                <&tog_off 7>,
+                <&macro_wait_time 100>,
+                <&tog_off 8>;
 
             label = "SCROLLLAYER_IOS";
+        };
+
+        iOS_FullScreen: iOS_FullScreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IOS_FULLSCREEN";
+        };
+
+        iOS_Minimize: iOS_Minimize {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp M>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IOS_MINIMIZE";
+        };
+
+        iOS_Split_Left: iOS_Split_Left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp GLOBE>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LCTRL &kp GLOBE>;
+
+            label = "IOS_SPLIT_LEFT";
+        };
+
+        iOS_Split_Right: iOS_Split_Right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp GLOBE>,
+                <&macro_tap>,
+                <&kp LS(RIGHT_ARROW)>,
+                <&macro_release>,
+                <&kp LCTRL &kp GLOBE>;
+
+            label = "IOS_SPLIT_RIGHT";
         };
     };
 
@@ -329,8 +385,8 @@
 
         iOS_Num {
             bindings = <
-&kp ESC           &kp PERCENT           &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &kp EQUAL
-&kp TILDE         &kp COLON             &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &kp K_CALC      &kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp SLASH
+&kp ESC           &kp PERCENT           &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &kp EQUAL
+&kp TILDE         &kp COLON             &iOS_Split_Left         &iOS_FullScreen     &iOS_Split_Right         &kp K_CALC      &kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp SLASH
 &kp LEFT_SHIFT    &kp DOLLAR            &none                   &kp LG(DOWN_ARROW)  &none                    &none           &kp LANGUAGE_2  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp ASTERISK
 &kp LEFT_CONTROL  &kp NON_US_BACKSLASH  &kp COMMA               &trans              &trans                   &trans          &kp BACKSPACE   &kp KP_NUMBER_0                                                &kp COMMA
             >;
