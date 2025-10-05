@@ -242,11 +242,53 @@
                 <&macro_press>,
                 <&kp LCTRL &kp GLOBE>,
                 <&macro_tap>,
-                <&kp LS(RIGHT_ARROW)>,
+                <&kp RIGHT_ARROW>,
                 <&macro_release>,
                 <&kp LCTRL &kp GLOBE>;
 
             label = "IOS_SPLIT_RIGHT";
+        };
+
+        iOS_Split_Up: iOS_Split_Up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp GLOBE>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp LCTRL &kp GLOBE>;
+
+            label = "IOS_SPLIT_UP";
+        };
+
+        iOS_Split_Down: iOS_Split_Down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp GLOBE>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp LCTRL &kp GLOBE>;
+
+            label = "IOS_SPLIT_DOWN";
+        };
+
+        iOS_Show_AllWindow: iOS_Show_AllWindow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IOS_SHOW_ALLWINDOW";
         };
     };
 
@@ -354,10 +396,10 @@
 
         iOS_SYMBOL {
             bindings = <
-&kp ESC           &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                &kp PIPE  &none           &none           &none            &mkp MB4
-&kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON      &kp LS(HOME)  &kp HOME  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
-&kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON          &kp LS(END)   &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &mo 7              &mkp MB4      &mkp MB5                                                   &kp UNDERSCORE
+&kp ESC           &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                        &kp PIPE               &none           &none           &none            &kp LG(LEFT_BRACKET)
+&kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON      &kp LS(HOME)          &kp HOME               &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(RIGHT_BRACKET)
+&kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON          &kp LS(END)           &kp END                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &mo 7              &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                   &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -376,19 +418,19 @@
 
         Num {
             bindings = <
-&kp ESC           &kp PERCENT   &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
-&kp JP_TILDE      &kp JP_COLON  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &kp K_CALC      &kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
-&kp LEFT_SHIFT    &kp DOLLAR    &none                   &kp LG(DOWN_ARROW)  &none                    &none           &kp LANGUAGE_2  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
-&kp LEFT_CONTROL  &kp JP_YEN    &kp COMMA               &trans              &trans                   &trans          &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp COMMA
+&kp ESC           &kp PERCENT   &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
+&kp JP_TILDE      &kp JP_COLON  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &kp C_AL_CALC      &kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
+&kp LEFT_SHIFT    &kp DOLLAR    &none                   &kp LG(DOWN_ARROW)  &none                    &none              &kp LANGUAGE_2  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
+&kp LEFT_CONTROL  &kp JP_YEN    &kp COMMA               &trans              &trans                   &trans             &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp COMMA
             >;
         };
 
         iOS_Num {
             bindings = <
-&kp ESC           &kp PERCENT           &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &kp EQUAL
-&kp TILDE         &kp COLON             &iOS_Split_Left         &iOS_FullScreen     &iOS_Split_Right         &kp K_CALC      &kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp SLASH
-&kp LEFT_SHIFT    &kp DOLLAR            &none                   &kp LG(DOWN_ARROW)  &none                    &none           &kp LANGUAGE_2  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp ASTERISK
-&kp LEFT_CONTROL  &kp NON_US_BACKSLASH  &kp COMMA               &trans              &trans                   &trans          &kp BACKSPACE   &kp KP_NUMBER_0                                                &kp COMMA
+&kp ESC           &kp PERCENT           &kp LG(LS(TAB))  &iOS_Show_AllWindow  &kp LG(TAB)                                          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &kp EQUAL
+&kp TILDE         &kp COLON             &iOS_Split_Left  &iOS_Split_Up        &iOS_Split_Right  &kp LA(LG(D))      &kp COLON       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp SLASH
+&kp LEFT_SHIFT    &kp DOLLAR            &iOS_Minimize    &iOS_Split_Down      &iOS_FullScreen   &kp LG(H)          &kp LANGUAGE_2  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp ASTERISK
+&kp LEFT_CONTROL  &kp NON_US_BACKSLASH  &kp COMMA        &trans               &trans            &trans             &kp BACKSPACE   &kp KP_NUMBER_0                                                &kp COMMA
             >;
         };
 
