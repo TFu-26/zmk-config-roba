@@ -133,7 +133,7 @@
                 <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp F4>,
-								<&macro_wait_time 100>,
+                <&macro_wait_time 100>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
@@ -346,6 +346,15 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        a_tab: a_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_TAB";
+            bindings = <&kp A>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     keymap {
@@ -377,7 +386,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3        &kp F4   &kp F5                           &kp F1  &kp F2  &kp F3  &kp F4   &kp F5
 &kp F6  &kp F7  &kp F8        &kp F9   &kp F10  &none         &none     &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
-&none   &none   &none         &kp F11  &kp F12  &ind_bat      &ind_bat  &none   &none   &none   &kp F11  &kp F12
+&a_tab  &none   &none         &kp F11  &kp F12  &ind_bat      &ind_bat  &none   &none   &none   &kp F11  &kp F12
 &none   &none   &kp LEFT_ALT  &none    &none    &none         &none     &none                            &none
             >;
 
