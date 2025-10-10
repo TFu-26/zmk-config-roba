@@ -118,6 +118,11 @@
             bindings = <&kp JP_PIPE>;
             key-positions = <15 14>;
         };
+
+        WindowClose {
+            bindings = <&window_close>;
+            key-positions = <42 33 21>;
+        };
     };
 
     macros {
@@ -141,10 +146,10 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_ALT>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 500>,
                 <&macro_tap>,
                 <&kp F4>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 500>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
@@ -488,10 +493,10 @@
 
         iOS_Num {
             bindings = <
-&kp ESC           &kp PERCENT           &kp LG(LEFT_ARROW)  &iOS_Show_AllWindow   &kp LG(RIGHT_ARROW)                                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &kp EQUAL
-&kp TILDE         &kp COLON             &iOS_Split_Left     &iOS_Split_Up         &iOS_Split_Right      &kp LA(LG(D))      &kp COLON      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp SLASH
-&kp LEFT_SHIFT    &kp DOLLAR            &iOS_Minimize       &iOS_Split_Down       &iOS_FullScreen       &kp LG(H)          &kp TILDE      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp ASTERISK
-&kp LEFT_CONTROL  &kp NON_US_BACKSLASH  &kp COMMA           &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_3))  &trans             &kp BACKSPACE  &kp KP_NUMBER_0                                                &kp COMMA
+&kp ESC           &kp PERCENT           &iOS_PrevApp     &iOS_Show_AllWindow   &iOS_NextApp                                            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &kp EQUAL
+&kp TILDE         &kp COLON             &iOS_Split_Left  &iOS_Split_Up         &iOS_Split_Right      &kp LA(LG(D))      &kp COLON      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp SLASH
+&kp LEFT_SHIFT    &kp DOLLAR            &iOS_Minimize    &iOS_Split_Down       &iOS_FullScreen       &kp LG(H)          &kp TILDE      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp ASTERISK
+&kp LEFT_CONTROL  &kp NON_US_BACKSLASH  &kp COMMA        &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_3))  &trans             &kp BACKSPACE  &kp KP_NUMBER_0                                                &kp COMMA
             >;
         };
 
