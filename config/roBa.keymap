@@ -123,6 +123,11 @@
             bindings = <&window_close>;
             key-positions = <42 33 21>;
         };
+
+        ContextMenu {
+            bindings = <&kp K_CONTEXT_MENU>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
