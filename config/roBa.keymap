@@ -340,6 +340,14 @@
 
             label = "IOS_PREVAPP";
         };
+
+        bt_select_3: bt_select_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog_off 1>, <&macro_wait_time 200>, <&bt BT_SEL 3>;
+
+            label = "BT_SELECT_3";
+        };
     };
 
     behaviors {
@@ -434,10 +442,10 @@
 
         win_FUNCTION {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4   &kp F5                           &kp F1  &kp F2  &kp F3  &kp F4   &kp F5
-&kp F6      &kp F7        &kp F8        &kp F9   &kp F10  &none         &none     &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
-&kp LSHIFT  &none         &none         &kp F11  &kp F12  &ind_bat      &ind_bat  &none   &none   &none   &kp F11  &kp F12
-&kp LCTRL   &kp LEFT_GUI  &kp LEFT_ALT  &none    &none    &none         &none     &none                            &none
+&kp F1      &kp F2        &kp F3        &kp F4   &kp F5                                 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5
+&kp F6      &kp F7        &kp F8        &kp F9   &kp F10  &none          &none          &kp F6     &kp F7  &kp F8  &kp F9   &kp F10
+&kp LSHIFT  &none         &none         &kp F11  &kp F12  &ind_bat       &ind_bat       &none      &none   &none   &kp F11  &kp F12
+&kp LCTRL   &kp LEFT_GUI  &kp LEFT_ALT  &none    &kp TAB  &kp SPACE      &kp BACKSPACE  &kp ENTER                           &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -448,7 +456,7 @@
 &kp QUESTION      &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                   &kp JP_PIPE  &none           &none           &none            &mkp MB4
 &kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp SEMICOLON      &kp LS(HOME)  &kp HOME     &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
 &kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON       &kp LS(END)   &kp END      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &mo 8              &mkp MB4      &mkp MB5                                                      &kp JP_UNDERSCORE
+&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &kp ASTRK          &mkp MB4      &mkp MB5                                                      &kp JP_UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -459,7 +467,7 @@
 &kp QUESTION      &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                        &kp PIPE               &none           &none           &none            &kp LG(LEFT_BRACKET)
 &kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON      &kp LS(HOME)          &kp HOME               &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(RIGHT_BRACKET)
 &kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp LS(END)           &kp END                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &mo 8              &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                   &kp UNDERSCORE
+&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &kp ASTRK          &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                   &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -467,10 +475,10 @@
 
         win_ARROW {
             bindings = <
-&none             &none         &none  &none         &none                                             &bt_select_0  &bt_select_1    &bt_select_2    &out OUT_TOG     &mkp MB4
+&none             &bt BT_CLR    &none  &out OUT_BLE  &out OUT_USB                                      &bt_select_0  &bt_select_1    &bt_select_2    &bt_select_3     &mkp MB4
 &none             &none         &none  &none         &none         &kp INT_HENKAN        &kp LS(HOME)  &kp HOME      &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
 &kp LEFT_SHIFT    &none         &none  &none         &none         &kp INT_MUHENKAN      &kp LS(END)   &kp END       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESC
-&kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &bt_select_0  &bt_select_1  &bt_select_2          &kp LG(L)     &kp ENTER                                                      &kp JP_UNDERSCORE
+&kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &bt_select_3  &bt_select_1  &bt_select_2          &kp LG(L)     &kp ENTER                                                      &kp JP_UNDERSCORE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -478,10 +486,10 @@
 
         iOS_ARROW {
             bindings = <
-&none             &none         &none  &none         &none                                                        &bt_select_0         &bt_select_1    &bt_select_2    &out OUT_TOG     &kp LG(LEFT_BRACKET)
+&none             &bt BT_CLR    &none  &out OUT_BLE  &out OUT_USB                                                 &bt_select_0         &bt_select_1    &bt_select_2    &bt_select_3     &kp LG(LEFT_BRACKET)
 &none             &none         &none  &none         &none         &kp INT_HENKAN        &kp LS(LC(LEFT_ARROW))   &kp LC(LEFT_ARROW)   &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(RIGHT_BRACKET)
-&kp LEFT_SHIFT    &none         &none  &none         &none         &kp INT_MUHENKAN      &kp LS(LC(RIGHT_ARROW))  &kp LC(RIGHT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &window_close
-&kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &bt_select_0  &bt_select_1  &bt_select_2          &kp LC(LG(Q))            &kp ENTER                                                             &kp JP_UNDERSCORE
+&kp LEFT_SHIFT    &none         &none  &none         &none         &kp INT_MUHENKAN      &kp LS(LC(RIGHT_ARROW))  &kp LC(RIGHT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &bt_select_3  &bt_select_1  &bt_select_2          &kp LC(LG(Q))            &kp ENTER                                                             &kp JP_UNDERSCORE
             >;
 
             sensor-bindings = <&scroll_up_down>;
