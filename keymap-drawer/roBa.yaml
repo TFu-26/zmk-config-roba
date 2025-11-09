@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - {t: RIGHT ARROW, h: win_FUNCTION}
-  - {t: LANG1, h: win_FUNCTION}
+  - {t: UP ARROW, h: win_FUNCTION}
   - H
   - J
   - K
@@ -29,7 +29,7 @@ layers:
   - C
   - V
   - LEFT ARROW
-  - {t: LANGUAGE 2, h: LEFT ALT}
+  - {t: DOWN ARROW, h: LEFT ALT}
   - B
   - N
   - M
@@ -61,7 +61,7 @@ layers:
   - F
   - G
   - {t: RIGHT ARROW, h: win_FUNCTION}
-  - {t: LANG1, h: win_FUNCTION}
+  - {t: UP ARROW, h: win_FUNCTION}
   - H
   - J
   - K
@@ -73,7 +73,7 @@ layers:
   - C
   - V
   - LEFT ARROW
-  - {t: LANGUAGE 2, h: LEFT ALT}
+  - {t: DOWN ARROW, h: LEFT ALT}
   - B
   - N
   - M
@@ -127,10 +127,10 @@ layers:
   - LEFT GUI
   - LEFT ALT
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - TAB
+  - SPACE
+  - BACKSPACE
+  - ENTER
   - ''
   win_SYMBOL:
   - '?'
@@ -172,7 +172,7 @@ layers:
   - '#'
   - '{'
   - {t: default, h: toggle, type: held}
-  - iOS_Num
+  - '"'
   - '&mkp MB4'
   - '&mkp MB5'
   - Sft+0x87
@@ -216,20 +216,20 @@ layers:
   - '#'
   - '`'
   - {t: default, h: toggle, type: held}
-  - iOS_Num
+  - '*'
   - Gui+[
   - Gui+]
   - _
   win_ARROW:
   - ''
+  - BT CLR
   - ''
-  - ''
-  - ''
-  - ''
+  - OUT BLE
+  - OUT USB
   - '&bt_select_0'
   - '&bt_select_1'
   - '&bt_select_2'
-  - OUT TOG
+  - '&bt_select_3'
   - '&mkp MB4'
   - ''
   - ''
@@ -258,7 +258,7 @@ layers:
   - LEFT CONTROL
   - LEFT GUI
   - '&tkp1'
-  - '&bt_select_0'
+  - '&bt_select_3'
   - '&bt_select_1'
   - '&bt_select_2'
   - Gui+L
@@ -266,14 +266,14 @@ layers:
   - Sft+0x87
   iOS_ARROW:
   - ''
+  - BT CLR
   - ''
-  - ''
-  - ''
-  - ''
+  - OUT BLE
+  - OUT USB
   - '&bt_select_0'
   - '&bt_select_1'
   - '&bt_select_2'
-  - OUT TOG
+  - '&bt_select_3'
   - Gui+[
   - ''
   - ''
@@ -298,11 +298,11 @@ layers:
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - '&window_close'
+  - ''
   - LEFT CONTROL
   - LEFT GUI
   - '&tkp1'
-  - '&bt_select_0'
+  - '&bt_select_3'
   - '&bt_select_1'
   - '&bt_select_2'
   - Ctl+Gui+Q
@@ -391,8 +391,8 @@ layers:
   - \
   - ','
   - Sft+Gui+4
-  - {t: Sft+Gui+3, type: held}
-  - {type: held}
+  - Sft+Gui+3
+  - {t: ▽, type: trans}
   - BACKSPACE
   - KP 0
   - ','
@@ -469,3 +469,15 @@ combos:
   k: '&window_close'
 - p: [31, 32]
   k: CONTEXT MENU
+- p: [16, 17]
+  k: LANG1
+- p: [28, 29]
+  k: LANG2
+- p: [17, 18]
+  k: HOME
+- p: [30, 29]
+  k: END
+- p: [26, 25]
+  k: _
+- p: [14, 13]
+  k: '%'
