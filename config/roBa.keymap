@@ -520,10 +520,10 @@
 
         win_ARROW {
             bindings = <
-&none             &bt BT_CLR    &none  &out OUT_BLE  &out OUT_USB                                      &bt_select_0  &bt_select_1    &bt_select_2    &bt_select_3     &mkp MB4
-&none             &none         &none  &none         &none         &kp INT_HENKAN        &kp LS(HOME)  &kp HOME      &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
-&kp LEFT_SHIFT    &none         &none  &none         &none         &kp INT_MUHENKAN      &kp LS(END)   &kp END       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESC
-&kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &bt_select_3  &bt_select_1  &bt_select_2          &kp LG(L)     &kp ENTER                                                      &kp JP_UNDERSCORE
+&none             &bt BT_CLR    &none  &out OUT_BLE  &out OUT_USB                                         &bt_select_0  &bt_select_1    &bt_select_2    &bt_select_3     &mkp MB4
+&none             &none         &none  &none         &none         &kp C_PAUSE              &kp LS(HOME)  &kp HOME      &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
+&kp LEFT_SHIFT    &none         &none  &none         &none         &kp INTERNATIONAL_4      &kp LS(END)   &kp END       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESC
+&kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &bt_select_3  &bt_select_1  &bt_select_2             &kp LG(L)     &kp ENTER                                                      &kp JP_UNDERSCORE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -542,10 +542,10 @@
 
         Num {
             bindings = <
-&kp ESC           &kp PERCENT   &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
-&kp JP_TILDE      &kp JP_COLON  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &lt 2 C_AL_CALCULATOR      &lt 2 JP_COLON    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
-&kp LEFT_SHIFT    &kp DOLLAR    &none                   &kp LG(DOWN_ARROW)  &none                    &none                      &kp JP_TILDE      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
-&kp LEFT_CONTROL  &kp JP_YEN    &kp COMMA               &trans              &kp LS(LG(S))            &trans                     &kp BACKSPACE     &kp KP_NUMBER_0                                                 &kp COMMA
+&kp ESC           &kp PERCENT   &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
+&kp JP_TILDE      &kp JP_COLON  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &lt 2 C_AL_CALCULATOR      &lt 2 JP_COLON  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
+&kp LEFT_SHIFT    &kp DOLLAR    &none                   &kp LG(DOWN_ARROW)  &none                    &none                      &kp JP_TILDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
+&kp LEFT_CONTROL  &kp JP_YEN    &kp COMMA               &trans              &kp LS(LG(S))            &trans                     &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp COMMA
             >;
         };
 
