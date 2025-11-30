@@ -121,7 +121,7 @@
 
         WindowClose {
             bindings = <&window_close>;
-            key-positions = <42 33 21>;
+            key-positions = <8 7 9 6>;
         };
 
         ContextMenu {
@@ -172,6 +172,11 @@
         mb3 {
             bindings = <&mkp MB3>;
             key-positions = <20 19 18>;
+        };
+
+        comboEnter {
+            bindings = <&kp ENTER>;
+            key-positions = <33 42>;
         };
     };
 
