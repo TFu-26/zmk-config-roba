@@ -131,12 +131,12 @@
 
         Lang1 {
             bindings = <&kp LANG1>;
-            key-positions = <16 17>;
+            key-positions = <16 28>;
         };
 
         Lang2 {
             bindings = <&kp LANG2>;
-            key-positions = <28 29>;
+            key-positions = <29 17>;
         };
 
         Home {
@@ -157,6 +157,21 @@
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <14 13>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <15 27>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <14 26>;
+        };
+
+        mb3 {
+            bindings = <&mkp MB3>;
+            key-positions = <20 19 18>;
         };
     };
 
@@ -450,10 +465,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R                 &kp T                                                                &kp Y        &kp U  &kp I  &kp O      &kp P
-&a_tab          &kp S         &kp D         &kp F                 &kp G      &lt 2 RIGHT_ARROW                &lt 2 UP_ARROW           &kp H        &kp J  &kp K  &kp L      &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW                   &mt LEFT_ALT DOWN_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE            &lt 5 ENTER                           &lt_ScrollLayer_win 0 SLASH
+&kp Q           &kp W         &kp E         &kp R                 &kp T                                                                 &kp Y        &kp U  &kp I  &kp O      &kp P
+&a_tab          &kp S         &kp D         &kp F                 &kp G      &lt 2 DOWN_ARROW                 &lt 2 UP_ARROW            &kp H        &kp J  &kp K  &kp L      &kp MINUS
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW                   &mt LEFT_ALT RIGHT_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE             &lt 5 ENTER                           &lt_ScrollLayer_win 0 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -461,10 +476,10 @@
 
         iOS_default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R      &kp T                                                                &kp Y        &kp U  &kp I  &kp O      &kp P
-&kp A           &kp S         &kp D         &kp F      &kp G      &lt 2 RIGHT_ARROW                &lt 2 UP_ARROW           &kp H        &kp J  &kp K  &kp L      &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V      &kp LEFT_ARROW                   &mt LEFT_ALT DOWN_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp GLOBE  &lt 4 TAB  &lt_ScrollLayer_iOS 0 SPACE      &kp BACKSPACE            &lt 6 ENTER                           &lt_ScrollLayer_iOS 0 SLASH
+&kp Q           &kp W         &kp E         &kp R      &kp T                                                                 &kp Y        &kp U  &kp I  &kp O      &kp P
+&kp A           &kp S         &kp D         &kp F      &kp G      &lt 2 DOWN_ARROW                 &lt 2 UP_ARROW            &kp H        &kp J  &kp K  &kp L      &kp MINUS
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V      &kp LEFT_ARROW                   &mt LEFT_ALT RIGHT_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp GLOBE  &lt 4 TAB  &lt_ScrollLayer_iOS 0 SPACE      &kp BACKSPACE             &lt 6 ENTER                           &lt_ScrollLayer_iOS 0 SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -473,7 +488,7 @@
         win_FUNCTION {
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4   &kp F5                                 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5
-&kp F6      &kp F7        &kp F8        &kp F9   &kp F10  &none          &none          &kp F6     &kp F7  &kp F8  &kp F9   &kp F10
+&kp F6      &kp F7        &kp F8        &kp F9   &kp F10  &tog 7         &tog 7         &kp F6     &kp F7  &kp F8  &kp F9   &kp F10
 &kp LSHIFT  &none         &none         &kp F11  &kp F12  &ind_bat       &ind_bat       &none      &none   &none   &kp F11  &kp F12
 &kp LCTRL   &kp LEFT_GUI  &kp LEFT_ALT  &none    &kp TAB  &kp SPACE      &kp BACKSPACE  &kp ENTER                           &none
             >;
@@ -527,10 +542,10 @@
 
         Num {
             bindings = <
-&kp ESC           &kp PERCENT   &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
-&kp JP_TILDE      &kp JP_COLON  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &kp C_AL_CALC      &kp JP_COLON   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
-&kp LEFT_SHIFT    &kp DOLLAR    &none                   &kp LG(DOWN_ARROW)  &none                    &kp LS(LG(S))      &kp JP_TILDE   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
-&kp LEFT_CONTROL  &kp JP_YEN    &kp COMMA               &trans              &kp LS(LG(S))            &trans             &kp BACKSPACE  &kp KP_NUMBER_0                                                 &kp COMMA
+&kp ESC           &kp PERCENT   &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
+&kp JP_TILDE      &kp JP_COLON  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &lt 2 C_AL_CALCULATOR      &lt 2 COLON    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
+&kp LEFT_SHIFT    &kp DOLLAR    &none                   &kp LG(DOWN_ARROW)  &none                    &none                      &kp JP_TILDE   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
+&kp LEFT_CONTROL  &kp JP_YEN    &kp COMMA               &trans              &kp LS(LG(S))            &trans                     &kp BACKSPACE  &kp KP_NUMBER_0                                                 &kp COMMA
             >;
         };
 
