@@ -180,12 +180,12 @@
         };
 
         Asterisk {
-            bindings = <&kp ASTERISK>;
+            bindings = <&kp JP_ASTERISK>;
             key-positions = <13 25>;
         };
 
         doublequote {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp JP_DQUOTE>;
             key-positions = <24 12>;
         };
     };
