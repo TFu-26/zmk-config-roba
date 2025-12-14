@@ -178,6 +178,16 @@
             bindings = <&kp ENTER>;
             key-positions = <33 42>;
         };
+
+        Asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <13 25>;
+        };
+
+        doublequote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <24 12>;
+        };
     };
 
     macros {
@@ -489,18 +499,20 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp GLOBE  &lt 4 TAB  &lt_ScrollLayer_iOS 0 SPACE      &kp BACKSPACE     &lt 6 ENTER                              &lt_ScrollLayer_iOS 0 SLASH
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings =
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         win_FUNCTION {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4   &kp F5                                 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5
-&kp F6      &kp F7        &kp F8        &kp F9   &kp F10  &tog 7         &tog 7         &kp F6     &kp F7  &kp F8  &kp F9   &kp F10
-&kp LSHIFT  &none         &none         &kp F11  &kp F12  &ind_bat       &ind_bat       &none      &none   &none   &kp F11  &kp F12
-&kp LCTRL   &kp LEFT_GUI  &kp LEFT_ALT  &none    &kp TAB  &kp SPACE      &kp BACKSPACE  &kp ENTER                           &none
+&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                                 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5
+&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &tog 7         &tog 7         &kp F6     &kp F7  &kp F8  &kp F9   &kp F10
+&kp LSHIFT     &none          &none          &none          &bt BT_CLR     &ind_bat       &ind_bat       &none      &none   &none   &kp F11  &kp F12
+&kp LCTRL      &kp LEFT_GUI   &kp LEFT_ALT   &none          &kp TAB        &kp SPACE      &kp BACKSPACE  &kp ENTER                           &none
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         win_SYMBOL {
