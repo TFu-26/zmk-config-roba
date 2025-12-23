@@ -116,7 +116,7 @@
 
         Pipe {
             bindings = <&kp JP_PIPE>;
-            key-positions = <15 14>;
+            key-positions = <3 13>;
         };
 
         WindowClose {
@@ -161,7 +161,7 @@
 
         colon {
             bindings = <&kp JP_COLON>;
-            key-positions = <15 27>;
+            key-positions = <4 14>;
         };
 
         semicolon {
@@ -187,6 +187,11 @@
         doublequote {
             bindings = <&kp JP_DQUOTE>;
             key-positions = <24 12>;
+        };
+
+        single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <23 11>;
         };
     };
 
