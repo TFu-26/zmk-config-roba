@@ -190,7 +190,7 @@
         };
 
         single_quote {
-            bindings = <&kp SINGLE_QUOTE>;
+            bindings = <&kp JP_QUOTE>;
             key-positions = <23 11>;
         };
     };
