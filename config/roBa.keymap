@@ -42,7 +42,7 @@
     scroll-layers = <9>;
 
     arrows {
-        layers = <2>;
+        layers = <3>;
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
@@ -50,7 +50,7 @@
             <&kp DOWN_ARROW>;
 
         tick = <30>;
-        wait-ms = <5>;
+        wait-ms = <10>;
         tap-ms = <5>;
     };
 };
