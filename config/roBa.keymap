@@ -201,6 +201,11 @@
             bindings = <&kp JP_DQUOTE>;
             key-positions = <24 12>;
         };
+
+        single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <23 11>;
+        };
     };
 
     macros {
