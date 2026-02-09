@@ -16,8 +16,8 @@ layers:
   - D
   - F
   - G
-  - {t: UP ARROW, h: win_FUNCTION}
-  - {t: DOWN ARROW, h: win_FUNCTION}
+  - {t: '`', h: win_FUNCTION}
+  - {t: ESC, h: win_FUNCTION}
   - H
   - J
   - K
@@ -60,8 +60,8 @@ layers:
   - D
   - F
   - G
-  - {t: UP ARROW, h: win_FUNCTION}
-  - {t: DOWN ARROW, h: win_FUNCTION}
+  - {t: GLOBE, h: win_FUNCTION}
+  - {t: ESC, h: win_FUNCTION}
   - H
   - J
   - K
@@ -111,15 +111,15 @@ layers:
   - F8
   - F9
   - F10
-  - LSHIFT
+  - ''
   - ''
   - ''
   - ''
   - BT CLR
   - '&ind_bat'
   - '&ind_bat'
-  - ''
-  - ''
+  - OUT BLE
+  - OUT USB
   - ''
   - F11
   - F12
@@ -139,9 +139,9 @@ layers:
   - ']'
   - \
   - Sft+0x89
-  - ''
-  - ''
-  - ''
+  - ':'
+  - ^
+  - '0x89'
   - '&mkp MB4'
   - +
   - '!'
@@ -152,7 +152,7 @@ layers:
   - Sft+HOME
   - HOME
   - '&mkp MB1'
-  - UP ARROW
+  - Sft+UP ARROW
   - '&mkp MB2'
   - '&mkp MB5'
   - LEFT SHIFT
@@ -163,9 +163,9 @@ layers:
   - ''''
   - Sft+END
   - END
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - Sft+LEFT ARROW
+  - Sft+DOWN ARROW
+  - Sft+RIGHT ARROW
   - ''
   - LEFT CONTROL
   - '0x89'
@@ -183,8 +183,8 @@ layers:
   - '['
   - ']'
   - '|'
-  - ''
-  - ''
+  - +
+  - '&'
   - ''
   - Gui+[
   - '~'
@@ -196,7 +196,7 @@ layers:
   - Sft+HOME
   - HOME
   - '&mkp MB1'
-  - UP ARROW
+  - Sft+UP ARROW
   - '&mkp MB2'
   - Gui+]
   - LEFT SHIFT
@@ -207,9 +207,9 @@ layers:
   - ':'
   - Sft+END
   - END
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - Sft+LEFT ARROW
+  - Sft+DOWN ARROW
+  - Sft+RIGHT ARROW
   - ''
   - LEFT CONTROL
   - \
@@ -221,22 +221,22 @@ layers:
   - Gui+]
   - _
   win_ARROW:
-  - ''
-  - BT CLR
-  - ''
-  - OUT BLE
-  - OUT USB
+  - '?'
+  - '='
+  - '['
+  - <
+  - '>'
   - '&bt_select_0'
   - '&bt_select_1'
   - '&bt_select_2'
   - '&bt_select_3'
   - '&mkp MB4'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - INT MUHENKAN
+  - +
+  - '!'
+  - ^
+  - '*'
+  - (
+  - INT HENKAN
   - Sft+HOME
   - HOME
   - '&mkp MB1'
@@ -244,11 +244,11 @@ layers:
   - '&mkp MB2'
   - '&mkp MB5'
   - LEFT SHIFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - INTERNATIONAL 4
+  - '&'
+  - '@'
+  - '}'
+  - '|'
+  - INT MUHENKAN
   - Sft+END
   - END
   - LEFT ARROW
@@ -256,7 +256,7 @@ layers:
   - RIGHT ARROW
   - ESC
   - LEFT CONTROL
-  - LEFT GUI
+  - '0x89'
   - '&tkp1'
   - '&bt_select_3'
   - '&bt_select_1'
@@ -266,7 +266,7 @@ layers:
   - Sft+0x87
   iOS_ARROW:
   - ''
-  - BT CLR
+  - ''
   - ''
   - OUT BLE
   - OUT USB
@@ -493,3 +493,5 @@ combos:
   k: '"'
 - p: [24, 12]
   k: '@'
+- p: [23, 11]
+  k: '&'
