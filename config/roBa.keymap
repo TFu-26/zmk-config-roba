@@ -484,7 +484,7 @@
         default_layer {
             bindings = <
 &kp Q           &kp W         &kp E         &kp R                 &kp T                                                        &kp Y           &kp U  &kp I  &kp O      &kp P
-&a_tab          &kp S         &kp D         &kp F                 &kp G      &lt 2 GRAVE                      &lt 2 ESC        &kp H           &kp J  &kp K  &kp L      &kp MINUS
+&a_tab          &kp S         &kp D         &kp F                 &kp G      &lt 2 LANG1                      &lt 2 ESC        &kp H           &kp J  &kp K  &kp L      &kp MINUS
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW                   &kp RIGHT_ARROW  &mt LEFT_ALT B  &kp N  &kp M  &kp COMMA  &kp PERIOD
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE    &lt 5 ENTER                              &lt_ScrollLayer_win 0 SLASH
             >;
@@ -497,7 +497,7 @@
         iOS_default_layer {
             bindings = <
 &kp Q           &kp W         &kp E         &kp R      &kp T                                                        &kp Y           &kp U  &kp I  &kp O      &kp P
-&kp A           &kp S         &kp D         &kp F      &kp G      &lt 2 GLOBE                      &lt 2 ESC        &kp H           &kp J  &kp K  &kp L      &kp MINUS
+&kp A           &kp S         &kp D         &kp F      &kp G      &lt 2 LANG1                      &lt 2 ESC        &kp H           &kp J  &kp K  &kp L      &kp MINUS
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V      &kp LEFT_ARROW                   &kp RIGHT_ARROW  &mt LEFT_ALT B  &kp N  &kp M  &kp COMMA  &kp PERIOD
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp GLOBE  &lt 4 TAB  &lt_ScrollLayer_iOS 0 SPACE      &kp BACKSPACE    &lt 6 ENTER                              &lt_ScrollLayer_iOS 0 SLASH
             >;
@@ -522,10 +522,10 @@
 
         win_SYMBOL {
             bindings = <
-&kp QUESTION      &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                     &kp JP_YEN   &kp JP_PIPE         &kp JP_AMPERSAND    &kp MINUS            &kp EQUAL
-&kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp SEMICOLON        &kp LS(HOME)  &kp HOME     &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
-&kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON         &kp LS(END)   &kp END      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
-&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &kp JP_ASTERISK      &mkp MB4      &mkp MB5                                                                  &kp JP_UNDERSCORE
+&kp QUESTION      &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                     &kp JP_YEN  &kp JP_PIPE         &kp JP_AMPERSAND    &kp MINUS            &kp EQUAL
+&kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG2            &kp LS(HOME)  &kp HOME    &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
+&kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON         &kp LS(END)   &kp END     &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
+&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &kp JP_ASTERISK      &mkp MB4      &mkp MB5                                                                 &kp JP_UNDERSCORE
             >;
 
             sensor-bindings =
@@ -535,10 +535,10 @@
 
         iOS_SYMBOL {
             bindings = <
-&kp QUESTION      &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                        &kp PIPE               &kp PIPE            &kp AMPERSAND       &kp MINUS            &kp EQUAL
-&kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON      &kp LS(HOME)          &kp HOME               &mkp MB1            &kp LS(UP_ARROW)    &kp PLUS             &kp SLASH
-&kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp LS(END)           &kp END                &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
-&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &kp ASTRK          &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                               &kp UNDERSCORE
+&kp QUESTION      &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                    &kp PIPE               &kp PIPE            &kp AMPERSAND       &kp MINUS            &kp EQUAL
+&kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LANG2      &kp LS(HOME)          &kp HOME               &mkp MB1            &kp LS(UP_ARROW)    &kp PLUS             &kp SLASH
+&kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON      &kp LS(END)           &kp END                &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
+&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &kp ASTRK      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                               &kp UNDERSCORE
             >;
 
             sensor-bindings =
