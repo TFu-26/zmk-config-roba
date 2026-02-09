@@ -50,7 +50,7 @@
             <&kp DOWN_ARROW>;
 
         tick = <60>;
-        wait-ms = <10>;
+        wait-ms = <50>;
         tap-ms = <5>;
     };
 
@@ -522,9 +522,9 @@
 
         win_SYMBOL {
             bindings = <
-&kp QUESTION      &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                     &kp JP_PIPE  &kp JP_PLUS         &kp JP_AMPERSAND    &kp JP_YEN           &kp EQUAL
-&kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp SEMICOLON        &kp LS(HOME)  &kp HOME     &mkp MB1            &kp LS(UP_ARROW)    &mkp MB2             &kp SLASH
-&kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON         &kp LS(END)   &kp END      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &none
+&kp QUESTION      &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                     &kp JP_YEN   &kp JP_PIPE         &kp JP_AMPERSAND    &kp MINUS            &kp EQUAL
+&kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp SEMICOLON        &kp LS(HOME)  &kp HOME     &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
+&kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON         &kp LS(END)   &kp END      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
 &kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &kp JP_ASTERISK      &mkp MB4      &mkp MB5                                                                  &kp JP_UNDERSCORE
             >;
 
@@ -535,9 +535,9 @@
 
         iOS_SYMBOL {
             bindings = <
-&kp QUESTION      &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                        &kp PIPE               &kp PLUS            &kp AMPERSAND       &none                &kp LG(LEFT_BRACKET)
-&kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON      &kp LS(HOME)          &kp HOME               &mkp MB1            &kp LS(UP_ARROW)    &mkp MB2             &kp LG(RIGHT_BRACKET)
-&kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp LS(END)           &kp END                &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &none
+&kp QUESTION      &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                        &kp PIPE               &kp PIPE            &kp AMPERSAND       &kp MINUS            &kp EQUAL
+&kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON      &kp LS(HOME)          &kp HOME               &mkp MB1            &kp LS(UP_ARROW)    &kp PLUS             &kp SLASH
+&kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp LS(END)           &kp END                &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
 &kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &kp ASTRK          &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                               &kp UNDERSCORE
             >;
 
