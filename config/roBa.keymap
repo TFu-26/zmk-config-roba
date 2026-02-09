@@ -102,16 +102,6 @@
             key-positions = <8 9>;
         };
 
-        comboHOME {
-            bindings = <&kp HOME>;
-            key-positions = <20 21>;
-        };
-
-        comboEND {
-            bindings = <&kp END>;
-            key-positions = <32 33>;
-        };
-
         ctrlQ {
             bindings = <&kp LC(Q)>;
             key-positions = <6 7>;
