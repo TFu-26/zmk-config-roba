@@ -522,7 +522,7 @@
 
         win_SYMBOL {
             bindings = <
-&kp QUESTION      &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                     &kp JP_YEN  &kp JP_PIPE         &kp JP_AMPERSAND    &kp MINUS            &kp EQUAL
+&kp QUESTION      &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                     &kp JP_YEN  &kp JP_PIPE         &kp JP_AMPERSAND    &kp MINUS            &kp JP_EQUAL
 &kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG2            &kp LS(HOME)  &kp HOME    &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
 &kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON         &kp LS(END)   &kp END     &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
 &kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &kp JP_ASTERISK      &mkp MB4      &mkp MB5                                                                 &kp JP_UNDERSCORE
