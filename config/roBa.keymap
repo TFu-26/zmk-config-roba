@@ -499,10 +499,10 @@
 
         win_FUNCTION {
             bindings = <
-&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                                 &kp F1        &kp F2        &kp F3  &kp F4   &kp F5
-&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &tog 7         &tog 7         &kp F6        &kp F7        &kp F8  &kp F9   &kp F10
-&none          &none          &none          &none          &bt BT_CLR     &ind_bat       &ind_bat       &out OUT_BLE  &out OUT_USB  &none   &kp F11  &kp F12
-&kp LCTRL      &kp LEFT_GUI   &kp LEFT_ALT   &none          &kp TAB        &kp SPACE      &kp BACKSPACE  &kp ENTER                                    &kp INSERT
+&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                           &kp F1        &kp F2        &kp F3  &kp F4   &kp F5
+&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &tog 7        &tog 7    &kp F6        &kp F7        &kp F8  &kp F9   &kp F10
+&none          &none          &none          &none          &bt BT_CLR     &ind_bat      &ind_bat  &out OUT_BLE  &out OUT_USB  &none   &kp F11  &kp F12
+&none          &none          &none          &none          &none          &none         &none     &none                                        &kp INSERT
             >;
 
             sensor-bindings =
@@ -512,10 +512,10 @@
 
         win_SYMBOL {
             bindings = <
-&kp QUESTION      &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                     &kp JP_YEN  &kp JP_PIPE         &kp JP_AMPERSAND    &kp MINUS            &kp JP_EQUAL
-&kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG1            &kp LS(HOME)  &kp HOME    &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
-&kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON         &kp LS(END)   &kp END     &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
-&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &kp JP_ASTERISK      &mkp MB4      &mkp MB5                                                                 &kp JP_UNDERSCORE
+&kp QUESTION      &kp JP_CARET     &kp JP_AT         &kp JP_LBRACKET   &kp JP_RBRACKET                                       &kp JP_YEN       &kp JP_PIPE         &kp JP_AMPERSAND    &kp MINUS            &kp JP_EQUAL
+&kp JP_TILDE      &kp EXCLAMATION  &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG1            &kp LS(HOME)    &kp DOLLAR       &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
+&kp LEFT_SHIFT    &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON         &kp LS(END)     &kp UNDERSCORE   &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
+&kp LEFT_CONTROL  &kp JP_YEN       &kp HASH          &kp JP_BACKQUOTE  &to 0            &kp JP_ASTERISK      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
             >;
 
             sensor-bindings =
@@ -525,10 +525,10 @@
 
         iOS_SYMBOL {
             bindings = <
-&kp QUESTION      &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                    &kp PIPE               &kp PIPE            &kp AMPERSAND       &kp MINUS            &kp EQUAL
+&kp QUESTION      &kp CARET        &kp AT_SIGN        &kp LEFT_BRACKET      &kp RBKT                                                    &kp NON_US_BACKSLASH   &kp PIPE            &kp AMPERSAND       &kp MINUS            &kp EQUAL
 &kp TILDE         &kp EXCLAMATION  &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LANG1      &kp LS(HOME)          &kp HOME               &mkp MB1            &kp LS(UP_ARROW)    &kp PLUS             &kp SLASH
 &kp LEFT_SHIFT    &kp SQT          &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON      &kp LS(END)           &kp END                &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
-&kp LEFT_CONTROL  &kp BSLH         &kp HASH           &kp GRAVE             &to 0                  &kp ASTRK      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                               &kp UNDERSCORE
+&kp LEFT_CONTROL  &kp CARET        &kp HASH           &kp GRAVE             &to 0                  &kp ASTRK      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                               &kp UNDERSCORE
             >;
 
             sensor-bindings =
