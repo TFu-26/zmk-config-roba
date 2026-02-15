@@ -480,7 +480,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
+                <&inc_dec_kp LANG2 LANG1>,
                 <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
         };
 
