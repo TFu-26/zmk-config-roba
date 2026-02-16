@@ -512,7 +512,7 @@
 
         win_SYMBOL {
             bindings = <
-&kp QUESTION    &kp JP_DQUOTE  &kp EXCLAMATION   &kp JP_LBRACKET   &kp JP_RBRACKET                                       &kp JP_YEN       &kp JP_PIPE         &kp JP_AMPERSAND    &kp MINUS            &kp JP_EQUAL
+&kp QUESTION    &kp JP_DQUOTE  &kp EXCLAMATION   &kp JP_LBRACKET   &kp JP_RBRACKET                                       &kp JP_YEN       &kp JP_AMPERSAND    &kp JP_PIPE         &kp MINUS            &kp JP_EQUAL
 &kp JP_AT       &kp JP_QUOTE   &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG1            &kp LS(HOME)    &kp DOLLAR       &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
 &kp LEFT_SHIFT  &kp JP_TILDE   &kp PERCENT       &kp JP_LBRACE     &kp JP_RBRACE    &kp JP_COLON         &kp LS(END)     &kp UNDERSCORE   &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
 &kp JP_YEN      &kp JP_CARET   &kp HASH          &kp JP_BACKQUOTE  &to SEMICOLON    &kp JP_ASTERISK      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
@@ -525,7 +525,7 @@
 
         iOS_SYMBOL {
             bindings = <
-&kp QUESTION      &kp DOUBLE_QUOTES  &kp EXCLAMATION    &kp LEFT_BRACKET      &kp RBKT                                                       &kp NON_US_BACKSLASH   &kp PIPE            &kp AMPERSAND       &kp MINUS            &kp EQUAL
+&kp QUESTION      &kp DOUBLE_QUOTES  &kp EXCLAMATION    &kp LEFT_BRACKET      &kp RBKT                                                       &kp NON_US_BACKSLASH   &kp AMPERSAND       &kp PIPE            &kp MINUS            &kp EQUAL
 &kp AT_SIGN       &kp SQT            &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LANG1         &kp LS(HOME)          &kp HOME               &mkp MB1            &kp LS(UP_ARROW)    &kp PLUS             &kp SLASH
 &kp LEFT_SHIFT    &kp TILDE          &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(HOME)      &kp LS(END)           &kp END                &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
 &kp LEFT_CONTROL  &kp CARET          &kp HASH           &kp GRAVE             &to SEMICOLON          &kp ASTRK         &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                               &kp UNDERSCORE
