@@ -114,7 +114,7 @@
 
         Pipe {
             bindings = <&kp JP_PIPE>;
-            key-positions = <14 4>;
+            key-positions = <13 3>;
         };
 
         WindowClose {
@@ -149,7 +149,7 @@
 
         colon {
             bindings = <&kp JP_COLON>;
-            key-positions = <15 27>;
+            key-positions = <14 4>;
         };
 
         semicolon {
@@ -506,7 +506,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
                 <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
         };
 
@@ -525,10 +525,10 @@
 
         iOS_SYMBOL {
             bindings = <
-&kp QUESTION      &kp DOUBLE_QUOTES  &kp EXCLAMATION    &kp LEFT_BRACKET      &kp RBKT                                                    &kp NON_US_BACKSLASH   &kp PIPE            &kp AMPERSAND       &kp MINUS            &kp EQUAL
-&kp AT_SIGN       &kp SQT            &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LANG1      &kp LS(HOME)          &kp HOME               &mkp MB1            &kp LS(UP_ARROW)    &kp PLUS             &kp SLASH
-&kp LEFT_SHIFT    &kp TILDE          &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON      &kp LS(END)           &kp END                &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
-&kp LEFT_CONTROL  &kp CARET          &kp HASH           &kp GRAVE             &to SEMICOLON          &kp ASTRK      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                               &kp UNDERSCORE
+&kp QUESTION      &kp DOUBLE_QUOTES  &kp EXCLAMATION    &kp LEFT_BRACKET      &kp RBKT                                                       &kp NON_US_BACKSLASH   &kp PIPE            &kp AMPERSAND       &kp MINUS            &kp EQUAL
+&kp AT_SIGN       &kp SQT            &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LANG1         &kp LS(HOME)          &kp HOME               &mkp MB1            &kp LS(UP_ARROW)    &kp PLUS             &kp SLASH
+&kp LEFT_SHIFT    &kp TILDE          &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(HOME)      &kp LS(END)           &kp END                &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
+&kp LEFT_CONTROL  &kp CARET          &kp HASH           &kp GRAVE             &to SEMICOLON          &kp ASTRK         &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                               &kp UNDERSCORE
             >;
 
             sensor-bindings =
