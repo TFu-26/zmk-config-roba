@@ -129,12 +129,12 @@
 
         Home {
             bindings = <&kp HOME>;
-            key-positions = <17 18>;
+            key-positions = <17 18 16>;
         };
 
         End {
             bindings = <&kp END>;
-            key-positions = <30 29>;
+            key-positions = <30 29 28>;
         };
 
         Equal {
