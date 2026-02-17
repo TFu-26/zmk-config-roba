@@ -557,7 +557,7 @@
 &kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &kp GRAVE     &kp SEMICOLON  &kp COLON      &kp LC(LG(Q))            &kp ENTER                                                             &kp JP_UNDERSCORE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         Num {
