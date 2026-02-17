@@ -513,9 +513,9 @@
         win_SYMBOL {
             bindings = <
 &kp QUESTION    &kp JP_DQUOTE  &kp EXCLAMATION   &kp JP_LBRACKET   &kp JP_RBRACKET                                       &kp JP_YEN       &kp JP_AMPERSAND    &kp JP_PIPE         &kp MINUS            &kp JP_EQUAL
-&kp JP_AT       &kp JP_QUOTE   &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG1            &kp COLON       &kp LS(HOME)     &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
-&kp LEFT_SHIFT  &kp JP_TILDE   &kp PERCENT       &kp JP_LBRACE     &kp JP_RBRACE    &kp HOME             &kp END         &kp LS(END)      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
-&kp JP_YEN      &kp JP_CARET   &kp HASH          &kp JP_BACKQUOTE  &to SEMICOLON    &kp JP_ASTERISK      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
+&kp JP_AT       &kp JP_QUOTE   &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG1            &kp JP_COLON    &kp LS(HOME)     &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
+&kp LEFT_SHIFT  &kp JP_TILDE   &kp JP_ASTERISK   &kp JP_LBRACE     &kp JP_RBRACE    &kp HOME             &kp END         &kp LS(END)      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
+&kp JP_YEN      &kp JP_CARET   &kp HASH          &kp JP_BACKQUOTE  &kp SEMICOLON    &kp JP_COLON         &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
             >;
 
             sensor-bindings =
@@ -541,7 +541,7 @@
 &kp QUESTION    &kp JP_DQUOTE  &kp EXCLAMATION   &kp LESS_THAN     &kp GREATER_THAN                                      &bt_select_0  &bt_select_1    &bt_select_2    &bt_select_3     &mkp MB4
 &kp JP_AT       &kp JP_QUOTE   &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN     &kp INT_HENKAN        &kp LS(HOME)  &kp HOME      &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
 &kp LEFT_SHIFT  &kp JP_TILDE   &kp PERCENT       &kp JP_LBRACE     &kp JP_RBRACE     &kp INT_MUHENKAN      &kp LS(END)   &kp END       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESC
-&kp JP_YEN      &kp JP_CARET   &tkp1             &kp JP_BACKQUOTE  &kp SEMICOLON     &kp JP_ASTERISK       &kp LG(L)     &kp ENTER                                                      &kp JP_UNDERSCORE
+&kp JP_YEN      &kp JP_CARET   &tkp1             &kp JP_BACKQUOTE  &kp SEMICOLON     &kp JP_COLON          &kp LG(L)     &kp ENTER                                                      &kp JP_UNDERSCORE
             >;
 
             sensor-bindings =
