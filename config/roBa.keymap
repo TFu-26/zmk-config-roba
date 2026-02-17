@@ -512,10 +512,10 @@
 
         win_SYMBOL {
             bindings = <
-&kp QUESTION    &kp JP_DQUOTE  &kp EXCLAMATION   &kp JP_LBRACKET   &kp JP_RBRACKET                                       &kp JP_YEN       &kp JP_AMPERSAND    &kp JP_PIPE         &kp MINUS            &kp JP_EQUAL
-&kp JP_AT       &kp JP_QUOTE   &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG1            &kp JP_COLON    &kp LS(HOME)     &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
-&kp LEFT_SHIFT  &kp JP_TILDE   &kp JP_ASTERISK   &kp JP_LBRACE     &kp JP_RBRACE    &kp HOME             &kp END         &kp LS(END)      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
-&kp JP_YEN      &kp JP_CARET   &kp HASH          &kp JP_BACKQUOTE  &kp SEMICOLON    &kp JP_COLON         &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
+&kp QUESTION    &kp JP_DQUOTE  &kp EXCLAMATION   &kp JP_LBRACKET   &kp JP_RBRACKET                                    &kp JP_YEN       &kp JP_AMPERSAND    &kp JP_PIPE         &kp MINUS            &kp JP_EQUAL
+&kp JP_AT       &kp JP_QUOTE   &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG1         &kp JP_COLON    &kp LS(HOME)     &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
+&kp LEFT_SHIFT  &kp JP_TILDE   &kp JP_ASTERISK   &kp JP_LBRACE     &kp JP_RBRACE    &kp HOME          &kp END         &kp LS(END)      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
+&kp JP_YEN      &kp JP_CARET   &kp HASH          &kp JP_BACKQUOTE  &kp SEMICOLON    &kp JP_COLON      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
             >;
 
             sensor-bindings =
@@ -562,11 +562,13 @@
 
         Num {
             bindings = <
-&kp QUESTION      &kp JP_DQUOTE  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
-&kp JP_LPAREN     &kp JP_RPAREN  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &lt 2 C_AL_CALCULATOR      &lt 2 JP_COLON  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
-&kp LEFT_SHIFT    &kp JP_TILDE   &none                   &kp LG(DOWN_ARROW)  &none                    &none                      &kp JP_TILDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
-&kp DOLLAR        &kp CARET      &kp HASH                &trans              &kp LS(LG(S))            &tog_off 7                 &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp PERCENT
+&kp QUESTION    &kp JP_DQUOTE  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
+&kp JP_LPAREN   &kp JP_RPAREN  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &lt 2 C_AL_CALCULATOR      &lt 2 JP_COLON  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
+&kp LEFT_SHIFT  &kp JP_TILDE   &none                   &kp LG(DOWN_ARROW)  &none                    &none                      &kp JP_TILDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
+&kp DOLLAR      &kp CARET      &kp HASH                &trans              &kp LS(LG(S))            &tog_off 7                 &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp PERCENT
             >;
+
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         iOS_Num {
@@ -576,6 +578,8 @@
 &kp LEFT_SHIFT        &kp TILDE              &iOS_Minimize    &iOS_Split_Down       &iOS_FullScreen       &kp LG(H)          &kp TILDE      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp ASTERISK
 &kp DOLLAR            &kp CARET              &kp HASH         &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_3))  &trans             &kp BACKSPACE  &kp KP_NUMBER_0                                                &kp PERCENT
             >;
+
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         Scroll {
