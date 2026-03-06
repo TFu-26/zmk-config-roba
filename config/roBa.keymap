@@ -474,7 +474,7 @@
         default_layer {
             bindings = <
 &kp Q           &kp W         &kp E         &kp R                 &kp T                                                        &kp Y        &kp U  &kp I  &kp O      &kp P
-&a_tab          &kp S         &kp D         &kp F                 &kp G      &lt 2 LANG2                      &lt 2 ESC        &kp H        &kp J  &kp K  &kp L      &kp MINUS
+&a_tab          &kp S         &kp D         &kp F                 &kp G      &tkp1                            &lt 2 ESC        &kp H        &kp J  &kp K  &kp L      &kp MINUS
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW                   &kp RIGHT_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE    &lt 5 ENTER                           &lt_ScrollLayer_win 0 SLASH
             >;
@@ -541,7 +541,7 @@
 &kp QUESTION       &kp JP_DQUOTE  &kp EXCLAMATION   &kp LESS_THAN     &kp GREATER_THAN                                  &bt_select_0  &bt_select_1    &bt_select_2    &bt_select_3     &mkp MB4
 &kp JP_AT          &kp JP_QUOTE   &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN     &kp INT5          &kp JP_COLON  &kp LS(HOME)  &mkp MB1        &kp UP_ARROW    &mkp MB2         &mkp MB5
 &kp LEFT_SHIFT     &kp JP_TILDE   &kp JP_ASTERISK   &kp JP_LBRACE     &kp JP_RBRACE     &kp HOME          &kp END       &kp LS(END)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ESC
-&kp JP_UNDERSCORE  &kp JP_CARET   &tkp1             &kp JP_BACKQUOTE  &kp SEMICOLON     &kp JP_COLON      &kp LG(L)     &kp ENTER                                                      &kp JP_UNDERSCORE
+&kp JP_UNDERSCORE  &kp JP_CARET   &kp HASH          &kp JP_BACKQUOTE  &kp SEMICOLON     &kp JP_COLON      &kp LG(L)     &kp ENTER                                                      &kp JP_UNDERSCORE
             >;
 
             sensor-bindings =
