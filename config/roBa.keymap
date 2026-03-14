@@ -466,6 +466,13 @@
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
+
+        LangChange: LangChange {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LANGCHANGE";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2>, <&kp LANG1>;
+        };
     };
 
     keymap {
@@ -564,8 +571,8 @@
             bindings = <
 &kp QUESTION    &kp JP_DQUOTE  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
 &kp JP_LPAREN   &kp JP_RPAREN  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &lt 2 C_AL_CALCULATOR      &lt 2 JP_COLON  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
-&kp LEFT_SHIFT  &kp JP_TILDE   &none                   &kp LG(DOWN_ARROW)  &kp LG(E)                &kp C_AL_CALC              &kp JP_TILDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
-&kp DOLLAR      &kp CARET      &kp HASH                &trans              &kp LS(LG(S))            &tog_off 7                 &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp PERCENT
+&kp LEFT_SHIFT  &kp JP_TILDE   &tkp1                   &kp LG(DOWN_ARROW)  &kp LG(E)                &kp C_AL_CALC              &kp JP_TILDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
+&kp DOLLAR      &kp CARET      &kp HASH                &LangChange         &kp LS(LG(S))            &tog_off 7                 &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp PERCENT
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
