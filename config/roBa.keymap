@@ -466,6 +466,17 @@
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
+
+        LangChange: LangChange {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LANGCHANGE";
+            #binding-cells = <0>;
+            bindings =
+                <&mt LEFT_SHIFT GRAVE>,
+                <&kp LANG2>,
+                <&kp LANG1>,
+                <&tkp1>;
+        };
     };
 
     keymap {
@@ -473,10 +484,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R                 &kp T                                                        &kp Y        &kp U  &kp I  &kp O      &kp P
-&a_tab          &kp S         &kp D         &kp F                 &kp G      &lt 2 LANG2                      &lt 2 ESC        &kp H        &kp J  &kp K  &kp L      &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW                   &kp RIGHT_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE    &lt 5 ENTER                           &lt_ScrollLayer_win 0 SLASH
+&kp Q           &kp W         &kp E         &kp R        &kp T                                                        &kp Y        &kp U  &kp I  &kp O      &kp P
+&a_tab          &kp S         &kp D         &kp F        &kp G      &lt 2 LANG2                      &lt 2 ESC        &kp H        &kp J  &kp K  &kp L      &kp MINUS
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V      &kp LEFT_ARROW                   &kp RIGHT_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &LangChange  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE    &lt 5 ENTER                           &lt_ScrollLayer_win 0 SLASH
             >;
 
             sensor-bindings =
@@ -564,8 +575,8 @@
             bindings = <
 &kp QUESTION    &kp JP_DQUOTE  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
 &kp JP_LPAREN   &kp JP_RPAREN  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &lt 2 C_AL_CALCULATOR      &lt 2 JP_COLON  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
-&kp LEFT_SHIFT  &kp JP_TILDE   &none                   &kp LG(DOWN_ARROW)  &kp LG(E)                &kp C_AL_CALC              &kp JP_TILDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
-&kp DOLLAR      &kp CARET      &kp HASH                &trans              &kp LS(LG(S))            &tog_off 7                 &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp PERCENT
+&kp LEFT_SHIFT  &kp JP_TILDE   &tkp1                   &kp LG(DOWN_ARROW)  &kp LG(E)                &kp C_AL_CALC              &kp JP_TILDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
+&kp DOLLAR      &kp CARET      &kp HASH                &kp LANG2           &kp LS(LG(S))            &tog_off 7                 &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp PERCENT
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
