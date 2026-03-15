@@ -471,7 +471,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LANGCHANGE";
             #binding-cells = <0>;
-            bindings = <&kp LANG2>, <&kp LANG1>;
+            bindings = <&mt LEFT_SHIFT GRAVE>, <&kp LANG2>, <&kp LANG1>;
         };
     };
 
@@ -480,10 +480,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R                 &kp T                                                        &kp Y        &kp U  &kp I  &kp O      &kp P
-&a_tab          &kp S         &kp D         &kp F                 &kp G      &kp LANG2                        &lt 2 ESC        &kp H        &kp J  &kp K  &kp L      &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                 &kp V      &kp LEFT_ARROW                   &kp RIGHT_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE    &lt 5 ENTER                           &lt_ScrollLayer_win 0 SLASH
+&kp Q           &kp W         &kp E         &kp R        &kp T                                                        &kp Y        &kp U  &kp I  &kp O      &kp P
+&a_tab          &kp S         &kp D         &kp F        &kp G      &kp LANG2                        &lt 2 ESC        &kp H        &kp J  &kp K  &kp L      &kp MINUS
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V      &kp LEFT_ARROW                   &kp RIGHT_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &LangChange  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE    &lt 5 ENTER                           &lt_ScrollLayer_win 0 SLASH
             >;
 
             sensor-bindings =
