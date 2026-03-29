@@ -521,8 +521,8 @@
             bindings = <
 &kp QUESTION       &kp JP_DQUOTE  &kp EXCLAMATION   &kp JP_LBRACKET   &kp JP_RBRACKET                                    &kp JP_YEN       &kp JP_AMPERSAND    &kp JP_PIPE         &kp MINUS            &kp JP_EQUAL
 &kp JP_AT          &kp JP_QUOTE   &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG1         &kp JP_COLON    &kp LS(HOME)     &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
-&kp LEFT_SHIFT     &kp JP_TILDE   &kp JP_ASTERISK   &kp JP_LBRACE     &kp JP_RBRACE    &kp HOME          &kp END         &kp LS(END)      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
-&kp JP_UNDERSCORE  &kp JP_CARET   &kp HASH          &kp JP_BACKQUOTE  &kp SEMICOLON    &kp JP_COLON      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
+&kp LEFT_SHIFT     &kp JP_TILDE   &kp JP_BACKQUOTE  &kp JP_LBRACE     &kp JP_RBRACE    &kp HOME          &kp END         &kp LS(END)      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
+&kp JP_UNDERSCORE  &kp JP_CARET   &kp HASH          &kp JP_ASTERISK   &kp SEMICOLON    &kp JP_COLON      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
             >;
 
             sensor-bindings =
@@ -534,8 +534,8 @@
             bindings = <
 &kp QUESTION      &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RBKT                                              &kp NON_US_BACKSLASH  &kp AMPERSAND       &kp PIPE            &kp MINUS            &kp EQUAL
 &kp AT_SIGN       &kp SQT            &kp AMPERSAND    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LANG1      &kp COLON       &kp LS(HOME)          &mkp MB1            &kp LS(UP_ARROW)    &kp PLUS             &kp SLASH
-&kp LEFT_SHIFT    &kp TILDE          &kp ASTERISK     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HOME       &kp END         &kp LS(END)           &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
-&kp LEFT_CONTROL  &kp CARET          &kp HASH         &kp GRAVE             &kp SEMICOLON          &kp COLON      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                    &kp UNDERSCORE
+&kp LEFT_SHIFT    &kp TILDE          &kp GRAVE        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HOME       &kp END         &kp LS(END)           &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
+&kp LEFT_CONTROL  &kp CARET          &kp HASH         &kp ASTERISK          &kp SEMICOLON          &kp COLON      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                    &kp UNDERSCORE
             >;
 
             sensor-bindings =
