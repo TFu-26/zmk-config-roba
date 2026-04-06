@@ -471,11 +471,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LANGCHANGE";
             #binding-cells = <0>;
-            bindings =
-                <&mt LEFT_SHIFT GRAVE>,
-                <&kp LANG2>,
-                <&kp LANG1>,
-                <&tkp1>;
+            bindings = <&mt LEFT_SHIFT GRAVE>, <&kp LANG2>, <&kp LANG1>;
         };
     };
 
@@ -484,10 +480,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R        &kp T                                                      &kp Y        &kp U  &kp I  &kp O      &kp P
-&a_tab          &kp S         &kp D         &kp F        &kp G      &lt 2 LANG2                      &lt 2 ESC      &kp H        &kp J  &kp K  &kp L      &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V      &kp HOME                         &kp END        &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &LangChange  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE  &lt 5 ENTER                           &lt_ScrollLayer_win 0 SLASH
+&kp Q           &kp W         &kp E         &kp R        &kp T                                                        &kp Y        &kp U  &kp I  &kp O      &kp P
+&a_tab          &kp S         &kp D         &kp F        &kp G      &kp LANG2                        &lt 2 ESC        &kp H        &kp J  &kp K  &kp L      &kp MINUS
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C        &kp V      &kp LEFT_ARROW                   &kp RIGHT_ARROW  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &LangChange  &lt 3 TAB  &lt_ScrollLayer_win 0 SPACE      &kp BACKSPACE    &lt 5 ENTER                           &lt_ScrollLayer_win 0 SLASH
             >;
 
             sensor-bindings =
@@ -512,8 +508,8 @@
             bindings = <
 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                           &kp F1        &kp F2        &kp F3  &kp F4   &kp F5
 &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &tog 7        &tog 7    &kp F6        &kp F7        &kp F8  &kp F9   &kp F10
-&tog_off 1     &tog_on 1      &none          &none          &bt BT_CLR     &ind_bat      &ind_bat  &out OUT_BLE  &out OUT_USB  &none   &kp F11  &kp F12
-&none          &none          &none          &none          &none          &none         &none     &none                                        &kp INSERT
+&none          &none          &none          &none          &bt BT_CLR     &ind_bat      &ind_bat  &out OUT_BLE  &out OUT_USB  &none   &kp F11  &kp F12
+&none          &none          &none          &none          &kp INT5       &kp INT4      &none     &none                                        &kp INSERT
             >;
 
             sensor-bindings =
@@ -525,8 +521,8 @@
             bindings = <
 &kp QUESTION       &kp JP_DQUOTE  &kp EXCLAMATION   &kp JP_LBRACKET   &kp JP_RBRACKET                                    &kp JP_YEN       &kp JP_AMPERSAND    &kp JP_PIPE         &kp MINUS            &kp JP_EQUAL
 &kp JP_AT          &kp JP_QUOTE   &kp JP_AMPERSAND  &kp JP_LPAREN     &kp JP_RPAREN    &kp LANG1         &kp JP_COLON    &kp LS(HOME)     &mkp MB1            &kp LS(UP_ARROW)    &kp JP_PLUS          &kp SLASH
-&kp LEFT_SHIFT     &kp JP_TILDE   &kp JP_ASTERISK   &kp JP_LBRACE     &kp JP_RBRACE    &kp HOME          &kp END         &kp LS(END)      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
-&kp JP_UNDERSCORE  &kp JP_CARET   &kp HASH          &kp JP_BACKQUOTE  &kp SEMICOLON    &kp JP_COLON      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
+&kp LEFT_SHIFT     &kp JP_TILDE   &kp JP_BACKQUOTE  &kp JP_LBRACE     &kp JP_RBRACE    &kp HOME          &kp END         &kp LS(END)      &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp JP_ASTERISK
+&kp JP_UNDERSCORE  &kp JP_CARET   &kp HASH          &kp JP_ASTERISK   &kp SEMICOLON    &kp JP_COLON      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                               &kp JP_UNDERSCORE
             >;
 
             sensor-bindings =
@@ -536,10 +532,10 @@
 
         iOS_SYMBOL {
             bindings = <
-&kp QUESTION      &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RBKT                                              &kp NON_US_BACKSLASH  &kp DOLLAR          &kp PIPE            &kp MINUS            &kp EQUAL
+&kp QUESTION      &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RBKT                                              &kp NON_US_BACKSLASH  &kp AMPERSAND       &kp PIPE            &kp MINUS            &kp EQUAL
 &kp AT_SIGN       &kp SQT            &kp AMPERSAND    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LANG1      &kp COLON       &kp LS(HOME)          &mkp MB1            &kp LS(UP_ARROW)    &kp PLUS             &kp SLASH
-&kp LEFT_SHIFT    &kp TILDE          &kp ASTERISK     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HOME       &kp END         &kp LS(END)           &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
-&kp LEFT_CONTROL  &kp CARET          &kp HASH         &kp GRAVE             &kp SEMICOLON          &kp COLON      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                    &kp UNDERSCORE
+&kp LEFT_SHIFT    &kp TILDE          &kp GRAVE        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HOME       &kp END         &kp LS(END)           &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp ASTERISK
+&kp LEFT_CONTROL  &kp CARET          &kp HASH         &kp ASTERISK          &kp SEMICOLON          &kp COLON      &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                    &kp UNDERSCORE
             >;
 
             sensor-bindings =
@@ -562,10 +558,10 @@
 
         iOS_ARROW {
             bindings = <
-&none             &none         &none     &kp LESS_THAN         &kp GREATER_THAN                                               &bt_select_0         &bt_select_1    &bt_select_2    &bt_select_3     &kp LG(LEFT_BRACKET)
-&none             &none         &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none          &kp LS(LC(LEFT_ARROW))   &kp LC(LEFT_ARROW)   &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(RIGHT_BRACKET)
-&kp LEFT_SHIFT    &none         &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none          &kp LS(LC(RIGHT_ARROW))  &kp LC(RIGHT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp LEFT_CONTROL  &kp LEFT_GUI  &kp HASH  &kp GRAVE             &kp SEMICOLON          &kp COLON      &kp LC(LG(Q))            &kp ENTER                                                             &kp JP_UNDERSCORE
+&none             &none         &none  &out OUT_BLE  &out OUT_USB                                           &bt_select_0         &bt_select_1    &bt_select_2    &bt_select_3     &kp LG(LEFT_BRACKET)
+&none             &none         &none  &none         &none          &none          &kp LS(LC(LEFT_ARROW))   &kp LC(LEFT_ARROW)   &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(RIGHT_BRACKET)
+&kp LEFT_SHIFT    &none         &none  &none         &none          &none          &kp LS(LC(RIGHT_ARROW))  &kp LC(RIGHT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LEFT_CONTROL  &kp LEFT_GUI  &tkp1  &kp GRAVE     &kp SEMICOLON  &kp COLON      &kp LC(LG(Q))            &kp ENTER                                                             &kp JP_UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
@@ -573,10 +569,10 @@
 
         Num {
             bindings = <
-&kp QUESTION    &kp JP_DQUOTE  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
-&kp JP_LPAREN   &kp JP_RPAREN  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &kp ENTER          &lt 2 JP_COLON  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
-&kp LEFT_SHIFT  &kp JP_TILDE   &tkp1                   &kp LG(DOWN_ARROW)  &kp LG(E)                &kp C_AL_CALC      &kp JP_TILDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
-&kp DOLLAR      &kp CARET      &kp HASH                &kp LANG2           &kp LS(LG(S))            &tog_off 7         &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp PERCENT
+&kp QUESTION    &kp JP_DQUOTE  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)         &kp LC(LG(RIGHT_ARROW))                                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &kp JP_EQUAL
+&kp JP_LPAREN   &kp JP_RPAREN  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &lt 2 C_AL_CALCULATOR      &lt 2 JP_COLON  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp SLASH
+&kp LEFT_SHIFT  &kp JP_TILDE   &tkp1                   &kp LG(DOWN_ARROW)  &kp LG(E)                &kp C_AL_CALC              &kp JP_TILDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp JP_ASTERISK
+&kp DOLLAR      &kp CARET      &kp HASH                &kp LANG2           &kp LS(LG(S))            &tog_off 7                 &kp BACKSPACE   &kp KP_NUMBER_0                                                 &kp PERCENT
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
